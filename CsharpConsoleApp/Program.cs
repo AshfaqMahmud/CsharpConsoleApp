@@ -13,7 +13,7 @@ namespace CsharpConsoleApp
             //Sort.BubbleSort(arr);
             Sort.QuickSort(arr, 0, arr.Length - 1);
 
-            Console.WriteLine("Sorted array:");
+            Console.Write("Sorted array: ");
             for(int i = 0; i< arr.Length; i++)
             {
                 Console.Write(arr[i] + " ");
@@ -28,9 +28,12 @@ namespace CsharpConsoleApp
             {
                 list.Append(rand.Next() % 20);
             }
-
+            Console.Write("Linked list: ");
             list.Print();
-            Console.WriteLine(list.isThere(5));
+            //Console.WriteLine(list.isThere(5));
+            list.Sort();
+            Console.Write("\nSorted linked list: ");
+            list.Print();
         }
     }
 }
